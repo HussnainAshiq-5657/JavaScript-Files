@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #Box{
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript : Mouse Button</h1>
+          <div id="Box">
+
+          </div>
+
+
+<script>
+document.querySelector("#Box").addEventListener("mousedown",function(e){
+    console.clear();
+      var text = "You Pressed the Button : " + e.button;
+      console.log(text);
+});
+
+</script>
+</body>
+</html>

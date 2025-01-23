@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var arr = [
+        ["Harry",17,"Male", "B.COM"],
+        ["Hussnain",17, "Male", "B.COM"],
+        ["Zaman",17, "Male", "B.COM"],
+        ["Horria",17,"FeMale", "B.COM"],
+        ["Zaman",17, "Male", "B.COM"],
+        ["Horria",17,"FeMale", "B.COM"],
+        ["Horria","B.COM"],
+        ];
+        // document.write(arr[2][0]);
+        document.write("<table border='1px' cellspacing='0px' cellpadding='5px'>");
+         for(var a = 0; a<arr.length; a++){
+            document.write("<tr>");
+             for(var b = 0; b<arr[a].length; b++){
+                 document.write("<td>" + arr[a][b] + "</td> ");
+             }
+             document.write("</tr>");
+         }
+         document.write("</table>");
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

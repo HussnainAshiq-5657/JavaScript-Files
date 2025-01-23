@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+      #box{
+        background-color: pink;
+      }
+    </style>
+</head>
+<body>
+     <input  type="text" id="box">
+
+
+    <script>
+       document.getElementById("box").addEventListener("click",function(e){
+         var k;
+         switch(true){
+            case e.metaKey:
+                k = "U Pressed Meta Key";
+                break;
+                case e.shiftKey:
+                k = "U Pressed shift Key";
+                break;
+                case e.ctrlKey:
+                k = "U Pressed ctrl Key";
+                break;
+                case e.altKey:
+                k = "U Pressed alt Key";
+                break;
+                default:
+                    k = "You pressed Wrong Key";
+                    break;
+         }
+         console.log(k);
+
+       });
+    </script>
+</body>
+</html>

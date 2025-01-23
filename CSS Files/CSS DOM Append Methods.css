@@ -1,0 +1,10 @@
+h1{
+    color: red;
+    text-align: center;
+}
+#test{
+    background-color: yellow;
+    width: 800px;
+    height: 400px;
+    margin-left: 20%;
+}

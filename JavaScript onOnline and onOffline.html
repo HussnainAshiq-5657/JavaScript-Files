@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #second{
+            background-color:blue;
+            width: 300px;
+            height: 150px;
+            font-size: 23px;
+            padding: 30px;
+            border: 3px solid yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="second">
+
+    </div>
+    <script>
+        var target = document.getElementById("second");
+       window.addEventListener("online",function(){
+        target.innerHTML = "You are Online"; 
+        target.style.backgroundColor = "pink";    
+       });
+       window.addEventListener("offline",function(){
+        target.innerHTML = "You are Offline"; 
+        target.style.backgroundColor = "green";    
+       });
+       if(navigator.onLine){
+        console.log("Welcome");
+       }
+       else{
+        console.log("Not Welcome");
+       }
+    </script>
+</body>
+</html>

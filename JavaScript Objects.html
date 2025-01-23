@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var a = {
+            fisrtName : "Hussnain",
+            lastName : "Naz",
+            age : 18,
+            email : "hussnainnaz18@gmail.com",
+            favMovies : ["Dhoom","Race","Jawan"],
+            living : {
+                city : "Lahore",
+                Road : "Raiwind Road"
+            },
+            salary : function(){
+                return   25000;
+            },
+            fullName : function(){
+                return this.fisrtName + " " + this.lastName;
+            }
+        };
+        console.log(a);
+        document.write(a.living.Road);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+     #box{
+        font-size: 21px;
+        width: 20%;
+        padding: 15px;
+     }
+    </style>
+</head>
+<body>
+    <h1>JavaScript : onCut,onPaste,onCopy</h1>
+     <input type="text" id="box"/>
+
+
+    <script>
+        var target = document.getElementById("box")
+          document.getElementById("box").addEventListener("copy",function(){
+            console.clear();
+            console.log("You Copied Text");
+            target.style.backgroundColor = "lightblue"
+          });
+          document.getElementById("box").addEventListener("cut",function(){
+            console.clear();
+            console.log("You Cut Text");
+            target.style.backgroundColor = "pink"
+          });
+          document.getElementById("box").addEventListener("paste",function(){
+            console.clear();
+            console.log("You pasted Text");
+            target.style.backgroundColor = "lightgreen"
+          });
+    </script>
+</body>
+</html>

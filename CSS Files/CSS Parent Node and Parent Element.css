@@ -1,0 +1,40 @@
+#outer {
+    background-color: #fdd9a1; 
+    padding: 40px;
+    text-align: center;
+}
+
+#inner {
+    background-color: #ffc0cb; 
+    padding: 40px;
+    display: inline-block;
+}
+
+
+#box {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 80px;
+    display: inline-block;
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+#box-C {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 80px;
+    display: inline-block;
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+

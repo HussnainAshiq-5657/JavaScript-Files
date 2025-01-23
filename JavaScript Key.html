@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #Box{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript : Mouse Button</h1>
+          <input  type="text" id="Box">
+
+
+<script>
+    var left = 0;
+    var Up = 0;
+document.querySelector("body").addEventListener("keydown",function(e){
+    console.clear();
+      switch(e.key){
+        case "ArrowRight":
+            left = left + 5;
+            break;
+            case "ArrowLeft":
+            left = left - 5;
+            break;
+            case "ArrowUp":
+            Up = Up + 5;
+            break;
+            case "ArrowDown":
+            Up = Up - 5;
+            break;
+            default:
+               console.log( "You Pressed Wrong key");;
+                break;
+      }
+      console.log("left : " + left);
+      console.log("Up : " + Up);
+
+      var target = document.getElementById("Box")
+  target.style.marginLeft = left + "px";
+  target.style.marginTop = Up + "px";
+});
+  
+
+  console
+</script>
+</body>
+</html>

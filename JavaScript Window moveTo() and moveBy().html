@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button onclick="Openwindow()">Open Window</button>
+    <button onclick="Movewindow()">Move Window</button>
+
+
+
+    <script> 
+    var mywindow;
+        function Openwindow(){
+            mywindow = window.open("","_blank","width=500px,height=200px,left=400px,top=300px");
+            mywindow.document.write("<p>lorem gfjgjfhjhgasdcvvvvvvvvbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>")
+        };
+        function Movewindow(){
+           mywindow.moveBy("100","100");
+           mywindow.focus();
+        };
+    </script>
+</body>
+</html>

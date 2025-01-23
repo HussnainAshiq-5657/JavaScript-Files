@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HTML Basic Layout Design</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: slategray;
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrapper{
+         width: 1000px;
+         border: 3px solid firebrick;
+         margin: 0 auto;
+
+        }
+        .abc{
+            background-color: tomato;
+        }
+        .xyz{
+            background-color: yellow;
+        }
+        #header{
+         margin-top: -23px;
+         height: 100px;
+         padding: 10px;
+     }
+     #header h1{
+      text-align: left;
+      margin-top: 40px;
+     }
+     #menu{
+     background-color: lightsalmon;
+            
+}
+#menu ul{
+    padding: 0px;
+    margin: 0px;
+}
+#menu li{
+    display: inline-block;
+}
+#menu li a{
+    display:block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+#menu li a:hover{
+    color: white;
+    background-color: crimson;
+}
+   #content h2{
+    text-align: left;
+    color: aqua;
+   }
+#content{
+ background-color: white;
+ float: left;
+ width: 800px;
+ min-height: 364px;
+ padding: 20px;
+ text-align: justify;
+ box-sizing: border-box;        
+}
+#sidebar{
+background-color: lightblue;
+float: right;
+width: 200px;
+min-height: 549px;
+            
+}
+#sidebar li a{
+    text-decoration: none;
+}
+#sidebar li a:hover{
+    color: white;
+    background-color: crimson;
+}
+#footer{
+background-color: lightsalmon;
+clear: both;
+text-align: center;
+padding: 10px;
+            
+}
+    </style>
+    </head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="abc">
+            <h1>Yahoo Baba</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Sub Heading 2</h2>
+            <img src="./Pictures/Flower.avif" width="200px" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe eum unde ad quaerat molestiae!lorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corporis a fuga suscipit nesciunt quas dicta, maiores sed, ipsa harum, provident libero soluta quae. Veniam magni nisi molestias a quaerat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis aperiam neque delectus voluptatem at laudantium nobis sunt ab quia tempore repellat fugit officia fugiat, aut id quaerat omnis maiores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit doloribus, consequuntur, eaque tempore quas amet quaerat voluptates libero molestiae maxime repudiandae voluptate atque quibusdam mollit
+                <ul class="list">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit beatae ut n nobis po</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, laborum?</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit.</li>              
+              </ul>
+            </p>
+            <p class="list">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iste amet quidem expedita, incidunt quaerat laborum recusandae sequi delectus vitae neque non eligendi tenetur tempora veniam impedit adipisci atque pariatur.
+            </p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            hussnainnaz18@gmail.com
+        </div>
+    </div>
+    <script src="./JavaScript Files/JavaScript ClassList Methods.js"></script>
+
+</body>
+</html>
