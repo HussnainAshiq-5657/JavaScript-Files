@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #box{
+            width: 340px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+
+
+
+    <script>
+    //      document.getElementById("box").addEventListener("click",function(e){
+    //      var k;
+    //      switch(true){
+    //         case e.metaKey:
+    //             k = "U Pressed Meta Key";
+    //             break;
+    //             case e.shiftKey:
+    //             k = "U Pressed shift Key";
+    //             break;
+    //             case e.ctrlKey:
+    //             k = "U Pressed ctrl Key";
+    //             break;
+    //             case e.altKey:
+    //             k = "U Pressed alt Key";
+    //             break;
+    //             default:
+    //                 k = "You pressed Wrong Key";
+    //                 break;
+    //      }
+    //      console.log(k);
+
+    //    });
+
+
+
+    // var target = document.getElementById("box");
+    // target.addEventListener("mousedown",function(e){
+    //   var element = "You Pressed the Button : " + e.button;
+    //   console.log(element);                                      
+    // });
+
+var left = 0;
+var up = 0;
+
+             document.getElementById("body").addEventListener("keydown",function(e){
+          switch(e.key){
+         case "ArrowRight":
+            left = left + 5;
+            break;
+            case "ArrowLeft":
+            left = left - 5;
+            break;
+            case "ArrowUp":
+            up = up + 5;
+            break;
+            case "ArrowDown":
+            up = up - 5;
+            break;
+            default:
+            console.log("Other key Pressed");
+            break;
+          }
+          console.log("left : " + left);
+          console.log("up : " + up);
+          
+          
+          var target = document.getElementById("box")
+  target.style.marginLeft = left + "px";
+  target.style.marginTop = up + "px";
+    });
+    </script>
+</body>
+</html>
